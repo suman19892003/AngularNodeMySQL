@@ -1,0 +1,15 @@
+
+  <table class="table table-striped table-bordered">
+    <thead>
+        <tr class="thead-dark">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let user of alluser">
+      <td (click)="editUser(user)">{{user.firstname}}</td>
+      <td>{{user.lastname}}</td>
+      <td>{{user.address}}</td>
+    </tr>
+  </table>

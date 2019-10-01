@@ -1,0 +1,45 @@
+<div class="container">
+    <button type="button" (click)="change()" class="btn btn-success">Add User</button>
+    <form >
+        <h3>Add User</h3>
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" name="firstname" id="firstname"  [(ngModel)]="userData.firstname">
+      </div>
+
+      <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" class="form-control" name="lastname" id="lastname" [(ngModel)]="userData.lastname">
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" [(ngModel)]="userData.email">
+      </div>
+      <div class="form-group">
+          <label for="address">Address</label>
+          <textarea name="address" class="form-control" id="address" name="address" rows="5" [(ngModel)]="userData.address"></textarea>
+      </div>
+      <button type="button" (click)="submit()" class="btn btn-success">Submit</button>
+    </form>
+    <form>
+        <h3>Edit User</h3>
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" name="firstname" id="firstname"  [(ngModel)]="userEditData.firstname">
+      </div>
+
+      <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" class="form-control" name="lastname" id="lastname" [(ngModel)]="userEditData.lastname">
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" [(ngModel)]="userEditData.email">
+      </div>
+      <div class="form-group">
+          <label for="address">Address</label>
+          <textarea name="address" class="form-control" id="address" name="address" rows="5" [(ngModel)]="userEditData.address"></textarea>
+      </div>
+      <button type="button" (click)="update()" class="btn btn-success">Update</button>
+    </form>
+</div>
